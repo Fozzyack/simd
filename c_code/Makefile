@@ -11,6 +11,10 @@ OBJ = $(patsubst src/%.c,obj/%.o,$(SRC))
 
 default: $(TARGET)
 
+clean:
+	rm -rf bin/
+	rm -rf obj/
+
 $(TARGET): $(OBJ)
 	@mkdir -p $(dir $@)
 	$(CC) $(CFLAGS) -o $@ $^
