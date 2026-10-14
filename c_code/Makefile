@@ -1,7 +1,5 @@
 CC = gcc
-CFLAGS = -std=gnu17 -Wall -Werror -Wextra -Wpedantic -Iinclude
-
-DEBUG_FLAGS = $(CFLAGS) -O0 -g
+CFLAGS = -std=gnu17 -mavx2 -O3 -Wall -Werror -Wextra -Wpedantic -Iinclude
 
 TARGET = bin/simd.out
 SRC = $(wildcard src/*.c)
