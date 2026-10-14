@@ -1,4 +1,6 @@
 -std=gnu17
+-mavx2
+-O3
 -Wall
 -Werror
 -Wextra
